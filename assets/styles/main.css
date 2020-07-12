@@ -455,6 +455,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
   color: #101012;
   font-weight: 600;
   margin: 0;
@@ -1421,7 +1422,7 @@ pre .storage {
 }
 .hero-title {
   color: #fff;
-  font-size: 48px;
+  font-size: 80px;
   padding-bottom: 10px;
   margin-bottom: 30px;
   position: relative;
@@ -1437,7 +1438,7 @@ pre .storage {
 }
 .hero-text {
   color: #d4d3d3;
-  font-size: 14px;
+  font-size: 18px;
   letter-spacing: 2px;
   margin-bottom: 45px;
   text-transform: uppercase;
@@ -2325,12 +2326,10 @@ pre .storage {
 .vertical-text {
   margin: 0 auto;
   height: 300px !important;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-  -webkit-writing-mode: tb-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: tb-rl;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+      writing-mode: tb-rl;
 }
 .vertical-text p {
   font-size: 1.4rem !important;

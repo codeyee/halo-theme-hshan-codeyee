@@ -16,7 +16,7 @@
                     <div class="cover-content">
                         <!-- 封面内容 -->
                         <div class="inner">
-                            <h2 class="hero-title">${settings.home_title!options.blog_title!}</h2>
+                            <h1 class="hero-title">${settings.home_title!options.blog_title!}</h1>
                             <p class="hero-text">${settings.home_description!}</p>
                             <#if settings.enabled_index_cover_height!true>
                                 <a href="#postContainer"  class="arrow-down" data-scroll><span
