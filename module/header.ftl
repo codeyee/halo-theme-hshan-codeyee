@@ -1,14 +1,14 @@
 <aside class="sidebar side-bar-val" id="sidebar" style="overflow-y: auto !important;">
     <div class="inner">
         <div class="widget-area">
-            <!-- 菜单 -->
+            <!-- 缩略菜单 -->
             <nav class="site-navigation">
                 <ul class="menu">
                     <@menuTag method="tree">
                         <#list menus?sort_by('priority') as menu>
                             <li class="menu-item nav-menu-item ">
                                 <#if menu.children?? && menu.children?size gt 0>
-                                        <a href="javascript:void(0)" data-ajax target="${menu.target!}" class="nav-menu-link">${menu.name} <i class="fa fa-angle-down nav-menu-angle" aria-hidden="true"></i></a>
+                                    <a href="javascript:void(0)" data-ajax target="${menu.target!}" class="nav-menu-link">${menu.name} <i class="fa fa-angle-down nav-menu-angle" aria-hidden="true"></i></a>
                                     <#else>
                                         <a href="${menu.url!}" data-ajax target="${menu.target!}">${menu.name}</a>
                                 </#if>
@@ -25,6 +25,7 @@
                             </li>
                         </#list>
                     </@menuTag>
+                    <#--搜索-->
                     <#if settings.night_mode!true>
                         <li class="menu-item home nav-menu-item">
                             <i class="fa night-mode" id="nightModeSmall" aria-hidden="true"></i>
@@ -42,11 +43,13 @@
     </div>
 </aside>
 
+<#--导航栏菜单-->
 <header class="site-header" id="siteHeader">
     <div id="scrollMenu" class="scroll-menu header-inner">
         <div class="menu-items">
             <ul>
                 <#if settings.header_logoimg?? && settings.header_logoimg!=''>
+                    <#--LOGO显示-->
                     <li>
                         <a href="${blog_url!}" data-ajax id="headerLogo"
                            style="margin-right: 0; display: inline-block;height: 100%; line-height: 52px;"
@@ -59,6 +62,7 @@
                         </a>
                     </li>
                 </#if>
+                <#--导航栏菜单显示-->
                 <@menuTag method="tree">
                     <#list menus?sort_by('priority') as menu>
                         <li class="menu-scroll-item">
@@ -72,7 +76,7 @@
                                     <#list menu.children?sort_by('priority') as child>
                                         <li>
                                             <a href="${child.url!}" data-ajax target="${child.target!}" onfocus="this.blur();">
-                                                ${child.name}
+                                            ${child.name}
                                             </a>
                                         </li>
                                     </#list>
@@ -80,8 +84,21 @@
                             </#if>
                         </li>
                     </#list>
+                <#--显示所有分类-->
+                <@categoryTag method="list">
+                    <li class="menu-scroll-item">
+                        Categories
+                        <ul class="sub-menu">
+                            <#list categories as categorie>
+                                <li>
+                                    <a class="dropdown-item" href="${categorie.fullPath!}">${categorie.name}
+                                        (${categorie.postCount!})</a>
+                                </li>
+                            </#list>
+                        </ul>
+                    </li>
+                </@categoryTag>
                 </@menuTag>
-            </ul>
         </div>
         <div class="other-ctl" id="headerCtrl">
             <#if settings.top_search!true>
