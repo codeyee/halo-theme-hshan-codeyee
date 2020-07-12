@@ -69,9 +69,9 @@
                 <a href="${blog_url!}"> ${blog_title!}<#if settings.SiteSubtitle??> - ${settings.SiteSubtitle!}</#if></a>
             </p>
             <!-- 请尊重作者，请务必保留版权 -->
-            <p>Powered by <a target="_blank" href="http://halo.run">Halo</a> •
-                Theme by <a target="_blank" href="https://github.com/GalaxySuze/gridea-theme-subtle-galaxy">Subtle Galaxy</a> •
-                REFERENCE FROM <a href="https://github.com/hshanx/halo-theme-hshan.git">寒山</a></p>
+            <p>Powered by <a target="_blank" href="http://halo.run" target="_blank">Halo</a> •
+                THEME FROM <a href="https://github.com/hshanx/halo-theme-hshan.git" target="_blank">寒山</a>
+                FORK <a href="https://github.com/codeyee/halo-theme-hshan-codeyee.git" target="_blank">hshan-codeyee</a></p>
             <#if settings.TimeStatistics??>
                 <p>本站运行：<span id="span_dt_dt"></span></p>
             </#if>
