@@ -6,11 +6,10 @@
                 <header class="bg-cover page-header">
                     <#if settings.categories_patternimg?? && settings.categories_patternimg!=''>
                         <div class="cover-bg">
-                            <img src="${settings.categories_patternimg!}" alt="${blog_title!}">
+                            <img src="${(category.thumbnail != "") ? string(category.thumbnail,settings.categories_patternimg!)}" alt="${blog_title!}">
                         </div>
                     <#else>
-                        <div class="default-cover-bg"
-                        >
+                        <div class="default-cover-bg">
                         </div>
                     </#if>
                     <div class="cover-content">
