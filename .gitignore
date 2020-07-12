@@ -16,3 +16,4 @@ bin/
 .factorypath
 
 node_modules
+package-lock.json
