@@ -375,7 +375,7 @@ $(function () {
         isLinkToCurrentPage && $(this).on('click', function (event) {
             let titleId = $(this).attr("href");
             changeUrlAnchor(titleId);
-            let offsetTop = $(titleId).offset().top - 20;
+            let offsetTop = $(titleId).offset().top - 60;
             $("html,body").animate({scrollTop: offsetTop}, 300);
             event.preventDefault();
         });
