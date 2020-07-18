@@ -142,15 +142,16 @@ $(function () {
             a.on('click', function (event) {
                 let titleId = $(this).attr("href");
                 changeUrlAnchor(titleId);
-                let offsetTop = $(titleId).offset().top - 20;
+                let offsetTop = $(titleId).offset().top - 60;
+                console.log("a点击事件", offsetTop)
                 $("html,body").animate({scrollTop: offsetTop}, 300);
                 event.preventDefault(); // 阻止默认事件
             });
         });
         // 为每个title绑定点击事件
         titles.on('click', function (event) {
-            changeUrlAnchor(`#${$(this).attr("id")}`);
-            let offsetTop = $(this).offset().top - 20;
+            changeUrlAnchor( `#${$(this).attr("id")}`);
+            let offsetTop = $(this).offset().top - 60;
             $("html,body").animate({scrollTop: offsetTop}, 300);
             event.preventDefault();
         });
@@ -189,7 +190,7 @@ $(function () {
             $(`${to} a[data-catalog-target]`).on('click', function (event) {
                 let titleId = `#${$(this).attr("data-catalog-target")}`;
                 changeUrlAnchor(titleId);
-                let offsetTop = $(titleId).offset().top - 20;
+                let offsetTop = $(titleId).offset().top - 60;
                 $("html,body").animate({scrollTop: offsetTop}, 300);
                 event.preventDefault();
             });
