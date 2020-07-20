@@ -105,6 +105,7 @@ var post =  {
 
 
     initToc: function () {
+        console.log("initToc")
         var headerEl = 'h1,h2,h3,h4,h5,h6',  //headers
             content = '.post-content';//文章容器
         tocbot.init({

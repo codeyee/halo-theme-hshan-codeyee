@@ -81,8 +81,6 @@ figure {
   margin: 0;
 }
 
-pre,
-code,
 kbd,
 samp {
   font-family: Source Sans Pro, Helvetica Neue, Arial, sans-serif;
@@ -273,20 +271,20 @@ a:hover {
   color: var(--base-color);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif;
-  color: #101012;
-  font-weight: 600;
-  margin: 0;
-  padding: 55px 0 20px;
-  line-height: 1.33333;
-  text-rendering: optimizeLegibility;
-}
+//h1,
+//h2,
+//h3,
+//h4,
+//h5,
+//h6 {
+//  font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif;
+//  color: #101012;
+//  font-weight: 600;
+//  margin: 0;
+//  padding: 35px 0 20px;
+//  line-height: 1.33333;
+//  text-rendering: optimizeLegibility;
+//}
 
 h1 {
   font-size: 36px;
@@ -333,31 +331,31 @@ ins {
   background-color: #f4e1c0;
   color: #34495e;
   padding: 0 3px;
-  text-decoration: none;
+  //text-decoration: none;
 }
 
-code,
-pre {
-  font-family: Source Sans Pro, Helvetica Neue, Arial, sans-serif;
-}
+//code,
+//pre {
+//  font-family: Source Sans Pro, Helvetica Neue, Arial, sans-serif;
+//}
 
-:not(pre) > code {
-  padding: 1px 3px;
-  white-space: normal;
-}
+//:not(pre) > code {
+//  padding: 1px 3px;
+//  white-space: normal;
+//}
 
-pre {
-  font-size: 16px;
-  margin: 0 0 30px;
-  overflow: auto;
-  text-align: left;
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
-  word-wrap: normal;
-  border-radius: .25rem;
-  padding: 0.25rem;
-}
+//pre {
+//  font-size: 16px;
+//  margin: 0 0 30px;
+//  overflow: auto;
+//  text-align: left;
+//  white-space: pre;
+//  word-spacing: normal;
+//  word-break: normal;
+//  word-wrap: normal;
+//  border-radius: .25rem;
+//  padding: 0.25rem;
+//}
 
 blockquote {
   margin: 10px 0;
@@ -468,10 +466,10 @@ table td, table th {
     font-size: 16px;
   }
 
-  code,
-  pre {
-    font-size: 14px;
-  }
+  //code,
+  //pre {
+  //  font-size: 14px;
+  //}
 }
 
 /* Form fields */
@@ -659,45 +657,45 @@ img {
 }
 
 /* Syntax Highlighter */
-pre .comment {
-  color: #34495e;
-}
+//pre .comment {
+//  color: #34495e;
+//}
 
-pre .constant,
-pre .entity,
-pre .entity.class,
-pre .support {
-  color: var(--base-color);
-}
+//pre .constant,
+//pre .entity,
+//pre .entity.class,
+//pre .support {
+//  color: var(--base-color);
+//}
 
-pre .variable.global,
-pre .variable.class,
-pre .variable.instance {
-  color: #cc6666;
-}
-
-pre .constant.numeric,
-pre .constant.language,
-pre .constant.hex-color,
-pre .keyword.unit {
-  color: #de935f;
-}
-
-pre .constant.symbol,
-pre .string {
-  color: #b5bd68;
-}
-
-pre .entity.function,
-pre .support.css-property,
-pre .selector {
-  color: #81a2be;
-}
-
-pre .keyword,
-pre .storage {
-  color: #b294bb;
-}
+//pre .variable.global,
+//pre .variable.class,
+//pre .variable.instance {
+//  color: #cc6666;
+//}
+//
+//pre .constant.numeric,
+//pre .constant.language,
+//pre .constant.hex-color,
+//pre .keyword.unit {
+//  color: #de935f;
+//}
+//
+//pre .constant.symbol,
+//pre .string {
+//  color: #b5bd68;
+//}
+//
+//pre .entity.function,
+//pre .support.css-property,
+//pre .selector {
+//  color: #81a2be;
+//}
+//
+//pre .keyword,
+//pre .storage {
+//  color: #b294bb;
+//}
 
 /* Arrows */
 .arrow-down,
@@ -1443,13 +1441,33 @@ pre .storage {
   animation: fadein 1s ease-in-out;
   bottom: 0;
   left: 0;
-  opacity: 0.3;
+  opacity: 0.2;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.cover-bg-index {
+  -webkit-animation: fadein 1s ease-in-out;
+  animation: fadein 1s ease-in-out;
+  bottom: 0;
+  left: 0;
+  opacity: 0.7;
   position: absolute;
   right: 0;
   top: 0;
 }
 
 .cover-bg img {
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.cover-bg-index img {
   height: 100%;
   left: 0;
   object-fit: cover;
@@ -1505,10 +1523,12 @@ pre .storage {
 
 .hero-title {
   color: #fff;
-  font-size: 80px;
+  font-size: 60px;
   padding-bottom: 10px;
   margin-bottom: 30px;
   position: relative;
+  line-height: 1.1;
+  font-weight: 700;
 }
 
 .hero-title:after {
@@ -1523,7 +1543,7 @@ pre .storage {
 
 .hero-text {
   color: #d4d3d3;
-  font-size: 18px;
+  font-size: 13px;
   letter-spacing: 2px;
   margin-bottom: 45px;
   text-transform: uppercase;
@@ -1622,9 +1642,9 @@ pre .storage {
   text-transform: uppercase;
 }
 
-.post-list {
-  padding-top: 90px;
-}
+//.post-list {
+//  padding-top: 90px;
+//}
 
 .post-list .post-header {
   margin-bottom: 30px;
@@ -1994,6 +2014,7 @@ pre .storage {
 .comments-area {
   border-top: 1px solid #d4d3d3;
   padding: 0 5%;
+  margin-bottom: 20px;
 }
 
 .article-info .comments-area {
@@ -2026,7 +2047,7 @@ pre .storage {
  * ----------------------------------------------------------------------------
  */
 
-.pagination {
+.pagination-hshan {
   color: #adabac;
   font-size: 12px;
   line-height: 1.5;
@@ -2036,7 +2057,7 @@ pre .storage {
   text-transform: uppercase;
 }
 
-.pagination .inner {
+.pagination-hshan .inner {
   position: relative;
 }
 
@@ -2062,19 +2083,19 @@ pre .storage {
   right: 30px;
 }
 
-.pagination a:before,
-.pagination a:after {
+.pagination-hshan a:before,
+.pagination-hshan a:after {
   -webkit-transition: .3s;
   transition: .3s;
 }
 
-.pagination a:hover:before,
-.pagination a:hover:after {
+.pagination-hshan a:hover:before,
+.pagination-hshan a:hover:after {
   background-color: #34495e;
 }
 
 @media only screen and (max-width: 400px) {
-  .pagination {
+  .pagination-hshan {
     padding-bottom: 45px;
     padding-top: 45px;
   }
@@ -2309,7 +2330,7 @@ pre .storage {
 }
 
 .site-footer p {
-  line-height: 1.4rem;
+  line-height: 2rem;
   margin: 0;
 }
 .article-copyright-info {

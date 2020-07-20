@@ -24,6 +24,9 @@
                                 </#if>
                             </li>
                         </#list>
+                        <li>
+                            <a href="https://codeyee.com/categories">所有分类</a>
+                        </li>
                     </@menuTag>
                     <#--搜索-->
                     <#if settings.night_mode!true>
@@ -87,7 +90,7 @@
                 <#--显示所有分类-->
                 <@categoryTag method="list">
                     <li class="menu-scroll-item">
-                        Categories
+                        <a href="https://codeyee.com/categories">所有分类</a>
                         <ul class="sub-menu">
                             <#list categories as categorie>
                                 <li>

@@ -1,7 +1,7 @@
 <#--文章界面的主文章部分ok-->
 <section id="content" class="mb-5">
     <#--标题-->
-    <h1 id="contentTitle">${post.title!}</h1>
+<#--    <h1 id="contentTitle">${post.title!}</h1>-->
     <#-- 文章的基本信息 -->
     <small class="d-inline-block text-muted mt-2 ml-1">
         <span class="mr-3">

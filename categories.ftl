@@ -20,7 +20,7 @@
                     </div>
                 </header>
 
-                <div id="post-list" class="post-list inner" style="padding-bottom: 90px;">
+                <div id="post-list" class="post-list inner" style="padding-bottom: 90px; padding-top: 30px;">
                     <div class="tagcloud tag-page">
                         <@categoryTag method="list">
                             <#if categories?? && categories?size gt 0>

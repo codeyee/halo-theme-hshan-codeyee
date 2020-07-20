@@ -1,4 +1,4 @@
-<nav class="pagination" id="pagination">
+<nav class="pagination-hshan" id="pagination">
     <h2 class="screen-reader-text">Posts Navigation</h2>
     <div class="inner">
         <#if pagination.hasPrev>
