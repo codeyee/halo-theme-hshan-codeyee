@@ -119,10 +119,12 @@ $(function () {
      * @param anchorId 锚点ID
      */
     let changeUrlAnchor = (anchorId) => {
+        // console.log("改变URL中的锚点",anchorId)
         let location = window.location;
         let origin = location.origin;
         let pathname = location.pathname;
-        let baseUrl = origin + pathname;
+        // let baseUrl = origin + pathname;
+        let baseUrl = origin + "/" + location.search;
         window.history.replaceState(null, null, baseUrl + anchorId);
     };
 
@@ -172,14 +174,14 @@ $(function () {
         // 如果没有title的话返回0
         minTitleNumber = minTitleNumber === Infinity ? 0 : minTitleNumber;
         // 创建一个目录盒子
-        let catalogs = $("<div class='pl-4 pt-4 pb-2 text-truncate'></div>");
+        let catalogs = $("<div class='pl-4 pt-4 pb-2 text-truncate' style='padding-right: 15px'></div>");
         minTitleNumber && (() => {
             // 开始生成目录
             titles.each(function () {
                 // 得到标题等级，用来做margin-left处理
                 let titleLevel = parseInt($(this).prop("tagName")[1]) - minTitleNumber;
                 catalogs.append(
-                    `<p class='catalog-item'>
+                    `<p class='catalog-item' style="white-space: normal;">
                         <a href="javascript:void(0)" style="margin-left: ${titleLevel * marginSpace}rem;" data-catalog-target="${$(this).attr('id')}">${$(this).text()}</a>
                     </p>`
                 );
@@ -329,6 +331,7 @@ $(function () {
      * 处理手机端目录
      */
     let mobileCatalogControl = () => {
+        console.log("开始处理手机端目录")
         let time = 300;
         // 目录按钮
         let catalogButton = $("#catalogButton");
@@ -338,6 +341,7 @@ $(function () {
         let catalogOverBox = $("#catalogOverBox");
         // 目录按钮
         catalogButton.on("click", function () {
+            console.log("点击了目录按钮")
             $('html').addClass('no-scroll');
             $("#catalogBox").animate({right: "0"}, time);
             $("#catalogOverBox").show();
@@ -398,7 +402,8 @@ $(function () {
     // 5、代码可复制
     enableCodeCopy && clipBoardSupport();
     // 6、点击目录按钮的时候
-    displayMobileCatalog && mobileCatalogControl();
+    // displayMobileCatalog && mobileCatalogControl();
+    mobileCatalogControl();
     // 7、启用分享插件
     let $config = {
         origin: twitterAccountShare,
