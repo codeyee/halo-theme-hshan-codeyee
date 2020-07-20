@@ -949,12 +949,30 @@ img {
   }
 }
 
+@-webkit-keyframes fadein-index {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes fadein-index {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+
 @-webkit-keyframes fadein {
   0% {
     opacity: 0;
   }
   100% {
-    opacity: 0.3;
+    opacity: 0.2;
   }
 }
 
@@ -963,7 +981,7 @@ img {
     opacity: 0;
   }
   100% {
-    opacity: 0.3;
+    opacity: 0.2;
   }
 }
 
@@ -1448,8 +1466,8 @@ img {
 }
 
 .cover-bg-index {
-  -webkit-animation: fadein 1s ease-in-out;
-  animation: fadein 1s ease-in-out;
+  //-webkit-animation: fadein 1s ease-in-out;
+  animation: fadein-index 1s ease-in-out;
   bottom: 0;
   left: 0;
   opacity: 0.7;
