@@ -62,7 +62,7 @@
                                 col-sm-12
                                 col-xs-12
                                 sidebar-container
-                            " style="padding: 50px;">
+                            " style="padding: 20px;">
                             <!-- Featured Tags -->
                             <#if settings.sidebar_tags!true>
                                 <section>
