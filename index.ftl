@@ -62,7 +62,7 @@
                                 col-sm-12
                                 col-xs-12
                                 sidebar-container
-                            " style="padding: 50px 0 0 50px;">
+                            " style="padding: 50px;">
                             <!-- Featured Tags -->
                             <#if settings.sidebar_tags!true>
                                 <section>
@@ -168,7 +168,7 @@
                             <!-- Friends Blog -->
                             <#if settings.sidebar_links!true>
                                 <hr>
-                                <h5><a href="${blog_url!}/links">FRIENDS</a></h5>
+                                <h5><a href="${blog_url!}/links">FRIENDS >></a></h5>
                                 <ul class="list-inline">
                                     <@linkTag method="list">
                                         <#if links?? && links?size gt 0>
