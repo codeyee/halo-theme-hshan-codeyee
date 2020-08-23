@@ -37,7 +37,7 @@ $(function () {
                 return $(this).offset().top;
             }).get();
             // 获取当前位置距离最上面的尺寸 （+24）目的是去除偏差
-            let currentPageYOffset = window.pageYOffset + 24;
+            let currentPageYOffset = window.pageYOffset + 24 + 60;
             // 当前正在阅读的标题的下标（以0开始）
             readTitleIndex = articleTitleOffsetTops.findIndex((value, index, arr) => {
                 return (value <= currentPageYOffset && currentPageYOffset <= arr[index + 1]) ||
