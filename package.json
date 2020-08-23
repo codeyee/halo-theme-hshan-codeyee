@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "build": "npm run build-clean && npm run build-less && npm run build-autoprefix && npm run build-cleancss  && npm run build-js",
+    "build-less-cleancss": "npm run build-less && npm run build-cleancss",
     "build-autoprefix": "postcss --use autoprefixer --map false --output assets/styles/main.css assets/styles/main.css",
-    "build-cleancss": "cleancss -o assets/styles/main.min.css assets/styles/main.css",
+    "build-cleancss": "cleancss -o assets/styles/main.min.css assets/styles/main.css && cleancss -o assets/styles/xue-style.min.css assets/styles/xue-style.css",
     "build-clean": "rimraf css",
-    "build-less": "lessc assets/styles/main.less assets/styles/main.css",
+    "build-less": "lessc assets/styles/main.less assets/styles/main.css && lessc assets/styles/xue-style.less assets/styles/xue-style.css",
     "build-main": "uglifyjs assets/media/scripts/main.js -o assets/media/scripts/main.min.js",
     "build-post": "uglifyjs assets/media/scripts/post.js -o assets/media/scripts/post.min.js",
     "build-plugin": "uglifyjs assets/media/scripts/plugins.js -o assets/media/scripts/plugins.min.js",
