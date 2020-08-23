@@ -101,7 +101,7 @@ blockquote {
   height: 100px;
   flex-basis: 200px;
   flex-shrink: 0;
-  margin-left: 20px;
+  margin-right: 20px;
   border-radius: 2px;
   overflow: hidden;
   background-size: cover;
@@ -114,6 +114,10 @@ blockquote {
 
 .post-item .post-item-title {
   padding: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
 }
 
 .post-item .post-item-title a {
