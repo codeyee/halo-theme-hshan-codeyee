@@ -1,17 +1,27 @@
-# Halo Theme Hshan
+# Halo Theme Hshan Codeyee
 
-> 原始主题见[Subtle Galaxy](https://github.com/GalaxySuze/gridea-theme-subtle-galaxy)，原设计自Ghost Subtle主题，感谢做出这么漂亮的主题， 在原主题上面新增日志页面和目录以及一些个性化配置
+> 原始主题见 [Hshan](https://github.com/hshanx/halo-theme-hshan.git)，原设计自主题Hshan，感谢做出这么漂亮的主题，在原主题上进行个性化配置
 
 此主题目录为前端渲染,可以不用再文章开头加上`[TOC]`
 
+
+## 仓库地址
+
+国内仓库：https://gitee.com/codeyee/halo-theme-hshan-codeyee
+
+Github仓库：https://github.com/codeyee/halo-theme-hshan-codeyee
+
 ## 主题预览
-![主题预览](https://github.com/hshanx/halo-theme-hshan/blob/master/screenshot.png )
+
+![主题预览](https://uposs.codeyee.com/chrome_HuI56TqR6S.jpg)
 
 [主题指南](https://baozi.fun/archives/theme-manual)
 
-[预览地址](https://baozi.fun)
+[预览地址](https://www.codeyee.com)
 
 ## 已实现功能 
+
+* [x] 主页侧边信息栏
 * [x] 日志页面
 * [x] 文章目录且可配置
 * [x] 友链页面
@@ -33,6 +43,9 @@
 
 
 ## 更新日志
+- 2020-7-20 主页增加侧边信息栏、优化标签页面、
+
+-------- 
 - 2020-1-20 重构友链页面
 - 2020-1-25 归档和留言板页面优化,
           header部分重构优化,
@@ -51,7 +64,7 @@
 - 2020-3-21 修复添加播放器之后底部锚点不起作用的问题
 - 2020-3-25 集成 pjax ,适配 halo 1.3.x
       
-  详细更新日志请[点击](https://baozi.fun/s/update-log)       
+  详细更新日志请[点击](https://www.codeyee.com/s/hshan-codeyee-updatelog)       
   
           
 
@@ -64,8 +77,9 @@
 
 
 ## 安装方法
-1. 克隆或者[下载](https://github.com/hshanx/halo-theme-hshan/releases)。
+
+1. 克隆或者[下载](https://gitee.com/codeyee/halo-theme-hshan-codeyee/releases)。
 2. 压缩为 zip 压缩包之后在后台的主题设置直接上传即可使用。
 3. 用Halo的程序拉取 https://github.com/hshanx/halo-theme-hshan.git
 
-> 感谢使用 Halo-theme-hshan 主题
+> 感谢使用 Halo-theme-hshan-codeyee 主题
