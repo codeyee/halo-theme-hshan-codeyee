@@ -13,6 +13,7 @@
                         <div class="default-cover-bg">
                         </div>
                     </#if>
+
                     <div class="cover-content">
                         <!-- 封面内容 -->
                         <div class="inner">
@@ -26,7 +27,7 @@
                     </div>
                 </header>
 
-                <!-- Main Content -->
+                <!-- 主题内容 Main Content -->
                 <div class="container">
                     <div class="row">
                         <!-- USE SIDEBAR -->
@@ -38,7 +39,7 @@
                                 col-xs-12
                                 post-container
                             ">
-                            <#--文章内容-->
+                            <#--首页文章内容-->
                             <div id="postContainer">
                                 <!-- post-list -->
                                 <#include "module/post-list-style/simple.ftl">
@@ -49,7 +50,7 @@
                                 </@paginationTag>
                             </#if>
                         </div>
-                        <!-- Sidebar Container -->
+                        <!-- 侧边栏部分 Sidebar Container -->
                         <div class="
                                 col-lg-3 col-lg-offset-0
                                 col-md-3 col-md-offset-0
