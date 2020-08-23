@@ -41,13 +41,7 @@
                             <#--文章内容-->
                             <div id="postContainer">
                                 <!-- post-list -->
-                                <#if (settings.post_list_style!'standard') == 'standard'>
-                                    <#include "module/post-list-style/standard.ftl">
-                                <#elseif settings.post_list_style == 'simple'>
-                                    <#include "module/post-list-style/simple.ftl">
-                                <#else>
-                                    <#include "module/post-list-style/random-card.ftl">
-                                </#if>
+                                <#include "module/post-list-style/simple.ftl">
                             </div>
                             <#if posts.totalPages gt 1>
                                 <@paginationTag method="index" page="${posts.number}" total="${posts.totalPages}" display="3">
