@@ -24,6 +24,28 @@
         <#--Hshan主题样式-->
         <link rel="stylesheet" href="${theme_base!}/assets/styles/main.min.css?ver=${.now?long}">
 
+        <#--Xue主题样式-->
+        <link rel="stylesheet" href="${theme_base!}/assets/styles/xue-style.min.css?ver=${.now?long}">
+
+        <script type="text/javascript">
+            var katex_config = {
+                delimiters:
+                    [
+                        {left: "$$", right: "$$", display: true},
+                        {left: "$", right: "$", display: false},
+                        {left: "\\(", right: "\\)", display: false},
+                        {left: "\\[", right: "\\]", display: true},
+                    ]
+            };
+            var openToc = false;
+            <#if settings.post_toc!true>
+            openToc = true;
+            </#if>
+        </script>
+
+        <#--Xue主题文章页面脚本-->
+        <script type="text/javascript" src="${theme_base!}/source/js/xue-post.js"></script>
+
         <#--标签云页面引入hux样式-->
         <#if is_tags??>
             <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap@3.3.2/dist/css/bootstrap.min.css">

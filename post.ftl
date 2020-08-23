@@ -58,17 +58,22 @@
                         <#-- 主容器 -->
                         <div class="container px-lg-2 pb-3 bg-white">
                             <div class="row">
+                                <#--Xue主题文章目录-->
+                                <div id="tocFlag"></div>
+                                <#if settings.post_toc!true>
+                                    <aside id="toc" class="toc font-sans"></aside>
+                                </#if>
                                 <#--左侧-->
-                                <div id="left" class="post-content-new" class="col-lg-8 pr-xl-5 px-lg-3 px-4">
+                                <div id="write" class="post-content-new md-content" class="col-lg-8 pr-xl-5 px-lg-3 px-4">
                                     <#-- 面包屑 -->
                                     <#include "module/post/breadcrumb.ftl">
-
                                     <#include "module/post/left.ftl">
                                 </div>
-<#--                                &lt;#&ndash; 右侧 &ndash;&gt;-->
-<#--                                <div id="right" class="col-lg-4">-->
-<#--                                    <#include "module/post/right.ftl">-->
-<#--                                </div>-->
+
+                                <#-- 右侧 -->
+                                <div id="right" class="col-lg-4">
+                                    <#include "module/post/right.ftl">
+                                </div>
                             </div>
                         </div>
 

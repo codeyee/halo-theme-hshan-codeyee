@@ -81,7 +81,7 @@
 
 <#--目录-->
 <#if settings.post_toc!true>
-    <script src="//cdn.jsdelivr.net/npm/tocbot@4.4.2/dist/tocbot.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/tocbot@4.11.2/dist/tocbot.min.js"></script>
 </#if>
 
 <script type="application/javascript">
