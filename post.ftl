@@ -70,19 +70,21 @@
                                     <#include "module/post/left.ftl">
                                 </div>
 
-                                <#-- 右侧 -->
-                                <div id="right" class="col-lg-4">
-                                    <#include "module/post/right.ftl">
-                                </div>
+<#--                                &lt;#&ndash; 右侧 &ndash;&gt;-->
+<#--                                <div id="right" class="col-lg-4">-->
+<#--                                    <#include "module/post/right.ftl">-->
+<#--                                </div>-->
+
                             </div>
                         </div>
 
-                        <#--手机端目录-->
-                        <div id="catalogButton" class="d-lg-none d-none" onclick="mobileCatalogControl()">
-                            <span><i class="fas fa-bars"></i></span>
-                        </div>
-                        <#--手机上文章目录后面的蒙版-->
-                        <div id="catalogOverBox" class="d-lg-none"></div>
+<#--                        &lt;#&ndash;手机端目录&ndash;&gt;-->
+<#--                        <div id="catalogButton" class="d-lg-none d-none" onclick="mobileCatalogControl()">-->
+<#--                            <span><i class="fas fa-bars"></i></span>-->
+<#--                        </div>-->
+
+<#--                        &lt;#&ndash;手机上文章目录后面的蒙版&ndash;&gt;-->
+<#--                        <div id="catalogOverBox" class="d-lg-none"></div>-->
 
                     </div>
                 </article>

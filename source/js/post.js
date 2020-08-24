@@ -204,21 +204,21 @@ $(function () {
     /**
      * 初始化图片点击效果并在图片下面添加上解释说明，需要配合fancybox.js使用
      */
-    let zoomImages = (imageSelector) => {
-        $(imageSelector).each(function () {
-            $(this).wrap( // 为图片包裹一个链接，使得fancybox.js可以使用
-                `<a href="${$(this).prop('src')}" data-fancybox="images" data-caption="${$(this).prop("alt")}"></a>`
-            ).after( // 在图片下面添加一个解释说明
-                () => {
-                    return $(this).prop("alt").trim() !== "" ? `<p class='text-center text-muted pt-3'>${$(this).prop("alt")}</p>` : ``;
-                }
-            );
-        });
-        // 为fancybox.js做配置
-        $("[data-fancybox='images']").fancybox({
-            buttons: ['zoom', 'download', 'close', 'thumbs']
-        });
-    };
+    // let zoomImages = (imageSelector) => {
+    //     $(imageSelector).each(function () {
+    //         $(this).wrap( // 为图片包裹一个链接，使得fancybox.js可以使用
+    //             `<a href="${$(this).prop('src')}" data-fancybox="images" data-caption="${$(this).prop("alt")}"></a>`
+    //         ).after( // 在图片下面添加一个解释说明
+    //             () => {
+    //                 return $(this).prop("alt").trim() !== "" ? `<p class='text-center text-muted pt-3'>${$(this).prop("alt")}</p>` : ``;
+    //             }
+    //         );
+    //     });
+    //     // 为fancybox.js做配置
+    //     $("[data-fancybox='images']").fancybox({
+    //         buttons: ['zoom', 'download', 'close', 'thumbs']
+    //     });
+    // };
 
     /**
      * 在代码的右上角显示代码的格式，方法需要配合CSS的支持
@@ -395,8 +395,10 @@ $(function () {
         $("#catalogBox").addClass("d-block");
         $("#catalogButton").addClass("d-block");
     });
-    // 3、初始化图片点击效果，并在图片下面添加上解释说明
-    zoomImages("article img");
+
+    // // 3、初始化图片点击效果，并在图片下面添加上解释说明
+    // zoomImages("article img");
+
     // 4、在代码的右上角显示代码的格式
     displayCodeType && displayCodeFormat("pre > code");
     // 5、代码可复制

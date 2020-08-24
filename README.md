@@ -1,9 +1,12 @@
+# 该主题已停止更新
+
+由于太多的样式冲突导致迁移 `Xue` 主题的成本过高，决定直接对 `Xue` 主题进行二次开发，保留该主题的一些个性化配置，请移步至新的仓库：[https://gitee.com/codeyee/halo-theme-xue-codeyee](https://gitee.com/codeyee/halo-theme-xue-codeyee)
+
 # Halo Theme Hshan Codeyee
 
 > 原始主题见 [Hshan](https://github.com/hshanx/halo-theme-hshan.git)，原设计自主题Hshan，感谢做出这么漂亮的主题，在原主题上进行个性化配置
 
 此主题目录为前端渲染,可以不用再文章开头加上`[TOC]`
-
 
 ## 仓库地址
 
@@ -13,7 +16,7 @@ Github仓库：https://github.com/codeyee/halo-theme-hshan-codeyee
 
 ## 主题预览
 
-![主题预览](https://uposs.codeyee.com/chrome_HuI56TqR6S.jpg)
+![主题预览](https://uposs.codeyee.com/TvIS5vaDFS.jpg)
 
 [主题指南](https://baozi.fun/archives/theme-manual)
 
@@ -45,7 +48,7 @@ Github仓库：https://github.com/codeyee/halo-theme-hshan-codeyee
 ## 更新日志
 - 2020-7-20 主页增加侧边信息栏、优化标签页面、
 
--------- 
+--------
 - 2020-1-20 重构友链页面
 - 2020-1-25 归档和留言板页面优化,
           header部分重构优化,
@@ -66,7 +69,7 @@ Github仓库：https://github.com/codeyee/halo-theme-hshan-codeyee
       
   详细更新日志请[点击](https://www.codeyee.com/s/hshan-codeyee-updatelog)       
   
-          
+  ​        
 
 ### 注意
 

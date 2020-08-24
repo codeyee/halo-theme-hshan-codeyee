@@ -49,9 +49,13 @@ var post = {
         // 滚动条离页面顶端的距离
         var scrollTop = post.getScrollTop();
         var postHeaderHeight = $('#postHeader').height();
+        var postFooterHeight = $('#siteFooter').height();
         if (scrollTop > postHeaderHeight) {
             tocFixed.show();
-        } else {
+        }else if(postFooterHeight >= postFooterHeight){
+            tocFixed.hide();
+        }
+        else {
             tocFixed.hide();
         }
 
@@ -101,7 +105,7 @@ var post = {
         var screenWidth = document.body.clientWidth;
         var tocEle = document.getElementById('toc');
         if (tocEle) {
-            tocEle.style.left = (screenWidth - 800) / 2 + 820 + "px";
+            tocEle.style.left = (screenWidth - 800) / 2 + 820 + 100 + "px";
         }
     },
 

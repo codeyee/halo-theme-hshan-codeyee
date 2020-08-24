@@ -158,14 +158,14 @@ var post =  {
             displayReadProgress && changeReadProgress();
         });
     },
-
-    initViewer: function () {
-        if (document.getElementById('post-content')) {
-            new Viewer(document.getElementById('post-content'), {
-                toolbar: false,
-            });
-        }
-    },
+    //
+    // initViewer: function () {
+    //     if (document.getElementById('post-content')) {
+    //         new Viewer(document.getElementById('post-content'), {
+    //             toolbar: false,
+    //         });
+    //     }
+    // },
 
     loadHighlight: function() {
         var codes = document.querySelectorAll('.post-page pre code');
@@ -246,8 +246,8 @@ $(function() {
     // 分享
     post.toggleSocialShare()
 
-    // 图片预览
-    post.initViewer()
+    // // 图片预览
+    // post.initViewer()
 
     // 目录悬浮时间
     post.tocHover();

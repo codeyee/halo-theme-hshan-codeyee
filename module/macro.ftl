@@ -42,10 +42,6 @@
             openToc = true;
             </#if>
         </script>
-
-        <#--Xue主题文章页面脚本-->
-        <script type="text/javascript" src="${theme_base!}/source/js/xue-post.js"></script>
-
         <#--标签云页面引入hux样式-->
         <#if is_tags??>
             <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap@3.3.2/dist/css/bootstrap.min.css">
@@ -297,6 +293,9 @@
     <#--CYBLOG全局的JavaScript脚本-->
     <script type="text/javascript" src="${theme_base!}/source/js/index.js"></script>
 
+    <#--右下角按钮-->
+    <#include "menu.ftl">
+
     <#--通用的底部内容-->
     <#include "footer.ftl">
 
@@ -328,9 +327,9 @@
     <#--代码高亮库-->
     <#if is_post??>
          <#--回到顶部浮窗按钮-->
-        <div id="backTop" class="back-top">
-            <span><i class="fas fa-caret-up"></i></span>
-        </div>
+<#--        <div id="backTop" class="back-top">-->
+<#--            <span><i class="fas fa-caret-up"></i></span>-->
+<#--        </div>-->
         <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
         <script type="text/javascript" src="${theme_base!}/source/js/post.js"></script>
@@ -411,6 +410,15 @@
 
     <#include "script.ftl">
 
+
+    <!-- 右下角按钮-->
+    <script src="${theme_base!}/source/js/xue/moon-menu.js?ver=2020008092122"></script>
+
+    <#--Xue主题文章页面脚本-->
+    <script type="text/javascript" src="${theme_base!}/source/js/xue-post.js"></script>
+
+
+
     <#--HUX主题标签云-->
     <script>
         function async(u, c) {
@@ -440,6 +448,7 @@
             })
         }
     </script>
+
     <#--防止其他引入其他样式导致一些默认样式被替换,在这里重新覆盖-->
     <style>
         a:hover{
